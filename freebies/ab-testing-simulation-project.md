@@ -1,4 +1,14 @@
+This project is part of the **Careers in Growth** and **Delivering Growth** communities.
+
+- 🆓 **[Careers in Growth](https://www.skool.com/delivering-growth-free/about)** is our free community where you can get feedback, support, and resources to help you land a role in Growth.
+- 💼 **[Delivering Growth](https://www.skool.com/delivering-growth/about)** is our paid community and full course library that teaches you how to build, run, and analyze trustworthy experiments — and succeed on a Growth team.
+
+Join either community to access tools, training, and people who’ve done this work in the real world.
+
+---
+
 # 📦 Build & Share Your Own A/B Test Simulation
+
 
 This free companion guide walks you through turning the A/B Test Simulation notebook into a **high-signal portfolio project** that proves your experimentation skills, especially when you're targeting Growth Engineering or Growth Data Analyst roles.
 
