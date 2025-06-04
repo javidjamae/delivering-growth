@@ -113,14 +113,14 @@ Use that to inspire your custom simulation.
 
 Update these variables in the code to match your scenario:
 
-\```python
+```python
 CONVERSION_RATES = {
     "control": 0.030,  # baseline
     "variant": 0.036   # simulate a 0.6% lift (20% relative improvement)
 }
 
 TOTAL_SAMPLES = 10000  # Or adjust based on your traffic assumptions
-\```
+```
 
 ## 🔧 What Changes and What Stays the Same
 
