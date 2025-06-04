@@ -1,6 +1,6 @@
 # 📦 Build & Share Your Own A/B Test Simulation
 
-This free companion guide walks you through turning the A/B Test Simulation notebook into a **high-signal portfolio project** that proves your experimentation skills—especially when you're targeting Growth Engineering roles.
+This free companion guide walks you through turning the A/B Test Simulation notebook into a **high-signal portfolio project** that proves your experimentation skills, especially when you're targeting Growth Engineering or Growth Data Analyst roles.
 
 You’ll not only copy and run the simulator, but also adapt it to a **real product scenario**, publish your results, and use it to get noticed by hiring managers.
 
@@ -252,14 +252,79 @@ Use this as your outline. Each section should be short, sharp, and scannable.
    - How does this mirror what real Growth Engineers do?  
    - What would you do next?
 
+7. **Supporting Materials**  
+   - ✅ A link to your Colab notebook (make sure sharing is set to “Anyone with the link can view”)  
+   - ✅ Or export as a PDF or static HTML and upload to Notion or GitHub  
+   - ✅ Your name, role, and a brief 1-liner at the bottom (like a project signature)
 
-## 📎 Add Supporting Materials
 
-Include:
+## 🧠 Bonus Ideas for Growth Engineers
 
-- ✅ A link to your Colab notebook (make sure sharing is set to “Anyone with the link can view”)
-- ✅ Or export as a PDF or static HTML and upload to Notion or GitHub
-- ✅ Your name, role, and a brief 1-liner at the bottom (like a project signature)
+To really stand out, include Growth Engineering-specific insights in your breakdown:
+
+- **Diagram the Experiment Architecture**  
+  Use a diagram to show how flagging, tracking, and analysis components work together. Optionally compare to a real-world system you've seen or built.
+
+- **Map Simulator Components to Real Tools**  
+
+  | Simulator Component     | Real System Equivalent       |
+  |-------------------------|------------------------------|
+  | `feature_flag_service`  | LaunchDarkly / Split.io      |
+  | `analytics_service`     | Amplitude / Snowplow         |
+  | `browser`               | Web client w/ Segment SDK    |
+  | `event_log`             | Data warehouse / event table |
+  | `Z-test analysis`       | In-house stats engine / Looker |
+
+- **Describe Testing Strategies & Failure Modes**  
+  - What happens if events are out of order?
+  - How would you QA bucketing logic or conversion attribution?
+  - What metrics would you monitor for assignment integrity?
+
+- **Show Scalability or Multi-Test Scenarios**  
+  - How would you scale this architecture to millions of users?
+  - What changes would be needed to support concurrent experiments or ramping?
+
+These extras showcase **system design thinking** — and that’s what separates a good Growth Engineer from a great one.
+
+## 📊 Bonus Ideas for Data Analysts
+
+To stand out as a Growth Analyst or Experimentation-focused Data Analyst, enrich your breakdown with deeper interpretation and statistical thinking:
+
+- **Explain the Statistical Assumptions**  
+  Show that you understand what the Z-test is doing under the hood:
+  - Why is a Z-test appropriate here?
+  - What assumptions are we making about sample independence, variance, or distribution?
+  - How might results change with lower traffic or smaller MDEs?
+
+- **Critique the Attribution Model**  
+  - Why is conversion attributed via `device_id` joins instead of storing variant in conversion events?
+  - What would break in a multi-touch or cross-device scenario?
+  - How would you handle late conversions or attribution windows?
+
+- **Interpret Confidence Intervals Visually**  
+  Use the plotted CI band to:
+  - Explain practical significance vs. statistical significance
+  - Point out overlapping intervals and what they imply
+  - Call out if the CI contains 0 and what that means for decision-making
+
+- **Propose Additional Cuts or Segments**  
+  - What if you sliced results by user type, geography, or acquisition channel?
+  - How might heterogeneity in treatment effect show up in a real dataset?
+
+- **Compare to Real Analytics Workflows**  
+
+  | Simulation Component   | Real Analytics Workflow               |
+  |------------------------|---------------------------------------|
+  | Flat `event_log`       | Snowplow / Segment → Data Warehouse   |
+  | Variant Join Logic     | dbt models for exposure attribution   |
+  | Analysis Notebook      | Jupyter / Hex / Mode SQL + Python     |
+  | Charts & Commentary    | Dashboard walkthrough / Slack recap   |
+
+- **Describe How You’d Present Results**  
+  - What 2–3 visuals would go into a real experiment readout?
+  - How would you communicate tradeoffs and uncertainty to PMs or execs?
+
+These additions show that you’re not just reporting numbers — you’re generating insights, questioning assumptions, and thinking like a decision partner.
 
 
 ## 💬 Sample Closing
@@ -346,9 +411,11 @@ This isn’t just a simulator. It’s a **signal engine**.
 
 By simulating a full experiment pipeline, customizing it for a real-world use case, and publishing your thinking, you’re doing the exact work Growth teams need—**not just talking about it**.
 
+When you go beyond basic analysis and include engineering-level system thinking — architecture, tooling equivalents, QA strategies — you prove you’re not just experiment-literate, you’re experiment-capable.
+
 It’s proof that you can ship fast, think clearly, and execute like someone already on the team.
 
-
+---
 
 Want help turning your simulator into a standout project?
 Join the [Careers in Growth](https://www.skool.com/delivering-growth-free/about) community and get feedback, examples, and next-step coaching.
