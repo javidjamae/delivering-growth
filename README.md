@@ -9,7 +9,7 @@ This project supports both the [Careers in Growth](https://www.skool.com/deliver
 
 All freebies here are real-world, engineer-ready, and built to help you show your thinking — not just your resume.
 
-### ✅ [A/B Test Simulation Project](freebies/ab-test-simulation-project.md)
+### ✅ [A/B Test Simulation Project](freebies/ab-testing-simulation-project.md)
 
 Build a full-featured A/B test simulator in Python, apply it to a real product scenario, and turn it into a **portfolio project** that gets you hired.
 
